@@ -28,7 +28,7 @@ while True:
             imgRoi = img[y:y+h,x:x+w]
             cv2.imshow("ROI",imgRoi)
     cv2.imshow("Result",img)
-    if cv2.waitKey(1) & 0xFF ==ord('s'):
+    if cv2.waitKey(1) & 0xFF ==ord('s'):   # for screenshot
         cv2.imwrite("D:\Prajwal\IMAGES"+str(count)+".jpg",imgRoi) #path given to store the resultent message 
         cv2.rectangle(img,(0,200),(640,300),(0,255,0),cv2.FILLED)
         cv2.putText(img,"Scan Saved",(15,265),cv2.FONT_HERSHEY_COMPLEX,2,(0,0,255),2)
